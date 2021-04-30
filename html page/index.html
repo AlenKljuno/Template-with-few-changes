@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="navbar">
+            <a class="logo" href="#">S&RClothing</a>
+            <ul class="nav">
+                <div class="dropdown">
+                    <li class="change">PRODUCTS
+                    <div class="dropdown-content">
+                        <a href="">UFC X VENUM</a>
+                        <a href="">Hoodies</a>
+                        <a href="">Shirts</a>
+                        <a href="">Sweatpants</a>
+                        <a href="">Bags</a>
+                    </div>
+                    </li>
+                </div>
+        
+        <li><a href="">Quiz</a></li>
+        <li><a href="">Soon!</a></li>
+        <li><a href="">Sign Up</a></li>
+        <button class="add">Cart</button>
+        </ul>
+        </div>
+        <section class="banner-area" id="home">
+           <div class="welcome">
+               <h1>Welcome</h1> <p class="prvi-param">to our page.<br>If you want to know more about us <br> click here</p>
+               <button @click='showModal = true'>ABOUT US</button>
+           </div>
+           <div  id="noviModal" class="modal" v-if="showModal">
+            <div class="modal-content" v-for='modal in modals' >
+                <h1>{{modal.title}}</h1>
+                <p>{{modal.desc}}</p>
+                <button class="button ugasi" @click='showModal = false'>Cancel</button>
+            </div>
+          
+        </div>
+        </section>
+        
+        <section class="about-area" id="about">
+            <div class="text-part">
+                <h1 class="about-dev">Best Sellers</h1>
+                <main class="kartice">
+                    <div class="card1">
+                        <img src="https://static.zara.net/photos///2021/V/0/1/p/6164/073/427/2/w/251/6164073427_2_1_1.jpg?ts=1615543507544" alt="jeans">
+                        <h2>Zara Jeans</h2>
+                        <p>30$</p>
+                        
+                    </div>
+                    <div class="card2">
+                        <img src="https://i.pinimg.com/originals/a9/42/cb/a942cb5141fe6522acfee48a0ec6cf90.jpg" alt="Bag" title="Bag">
+                        <h2>Michael Kors</h2>
+                        <p>330$</p>
+                        
+                        
+                    </div>
+                    <div class="card2">
+                        <img src="https://euro.venum.com/media/catalog/product/cache/3d6373dfdbd8bf7042581a31874a0831/f/3/f3fc6423635007f0e2bb166cad6d8fbbc52e9ffe_VNMUFC_00003_126_05.jpg" alt="Shorts" title="Shorts">
+                        <h2>UFC x Venum shorts</h2>
+                        <p>120$</p>
+                        
+                        
+                    </div>
+                </main>
+       
+        </div>
+        </section>
+        
+        <section class="port-area" id="portfolio">
+            <div class="text-part">
+                <p class="opis-from-us">Why to buy from us?</>
+                <main class="from-us">
+                    <div class="card-buy-from-us">
+                        <img class="prvi" src="https://images.theconversation.com/files/305837/original/file-20191209-90562-nsnsun.jpg?ixlib=rb-1.1.0&rect=284%2C696%2C1934%2C965&q=45&auto=format&w=1356&h=668&fit=crop" alt="Bag" title="Bag">
+                        <p class="opis">Priroda u procesu proizvodnje nije uništena, kao ni životinje!</p>   
+                    </div>
+                    <div class="card-buy2">
+                        <img class="drugi"  src="https://assets-global.website-files.com/5ccc8aa73871f9d12dc81c1b/5e344ce515145b63080b929e_fabric%20types.jpeg" alt="Bag" title="Bag">
+                        <p class="opis">Za izradu naših proizvoda koristimo samo najbolje produkte!</p>   
+                    </div>
+         </main>
+               
+        
+        </div>
+        </section>
+        
+        <section class="service-area" id="services">
+            <div class="text-part">
+                <h1 class="about-dev">About Developer</h1> 
+        <div class="card-dev">
+           <p class="o-meni"><b>Full Name</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alen Kljuno</p>
+           <hr>
+           <p class="o-meni"><b>Profession</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Junior Full Stack Developer</p>
+           <hr>
+           <p class="o-meni"><b>Education</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ITAcademy JavaScript Development</p>
+           <hr>
+           <p class="o-meni"><b>Experience</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 Year</p>
+           <hr>
+           <p class="o-meni"><b>Location</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sarajevo, Bosnia and Herzegovina</p>  
+           <button class="contact-me">My Contact</button>
+        </div>
+        </section>
+        
+        <section class="contact-area" id="contact">
+            <div class="text-part">
+                <footer class="site-footer">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                          
+                          <p class="text-justify">This page is made for everybody and if You are reading this right now, thank You for reaching the end of the front page. We hope that you enjoyed it. If You like You can share it with you're friends. We hope to see you again here. Thank You!</p>
+                        </div>           
+                    <div class="container">
+                      <div class="row">
+                          <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by Alen Kljuno
+                          </p>
+                        </div>
+              </footer>
+        </div>
+        </section>
+    </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
